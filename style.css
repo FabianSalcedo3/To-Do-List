@@ -202,3 +202,14 @@ li {
     opacity: 0.6;
     transition: all 100ms ease;
 }
+
+@media screen and (min-width: 776px) {
+    li {
+        width: 400px;
+    }
+
+    .testo {
+        width: 310px;
+        margin-right: 1rem;
+    }
+}
