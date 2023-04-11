@@ -185,6 +185,7 @@ li {
 .testo {
     width: 230px;
     font-size: larger;
+    overflow: hidden;
 }
 
 .data {
