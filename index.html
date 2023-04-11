@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <h1 class="animate__animated animate__fadeInDown">
+        <i class="fa-brands fa-hive"></i>
+        To Do List
+        <button class="arrow" title="Change theme">
+            <i class="fa-solid fa-chevron-up"></i>
+        </button>
+        <div class="temi animate__animated animate__fadeInDown" style="display: none;">
+            <button class="classic">Classic</button>
+            <button class="dark">Dark</button>
+            <button class="forest">Forest</button>
+            <button class="ocean">Ocean</button>
+        </div>
+    </h1>
+    <div class="wrapper">
+        <div class="task">
+            <input type="text" id="item" placeholder="What about tomorrow?" rows="5" cols="50">
+        </div>
+        <div class="task">
+            <input type="date" id="date">
+        </div>
+        <button id="add" title="Add task"><i class="fa-solid fa-plus"></i></button>
+    </div>
+    <div class="del-checkWrapper animate__animated animate__fadeInDown" style="display: none">
+        <button class="delete-checked" title="Delete checked tasks">
+            <i class="fa-solid fa-ban"></i>
+        </button>
+    </div>
+    <div class="listWrapper">
+        <ul id="lista" class="animate__animated animate__fadeInDown">
+
+        </ul>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
